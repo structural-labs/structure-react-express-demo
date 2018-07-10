@@ -62,7 +62,7 @@ Paste the code below into package.json.
   "version": "1.0.0",
   "scripts": {
     "start": "npm run client && npm run server",
-    "client": "cd client && yarn install && npm run build && cd ..",
+    "client": "cd client && npm run build && cd ..",
     "server": "node server.js"
   },
   "dependencies": {
