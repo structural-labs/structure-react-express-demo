@@ -54,7 +54,7 @@ create-react-app client
 
 Create a `package.json` using the command `touch package.json` inside your /server folder.
 
-Paste this into package.json. Let's look at this a little more closely. When we upload this application to [Structure](https://structure.sh), Structure will recursively install all package.json dependencies throughout our entire project. It will then run `npm start`. If we look at our package.json here, we can see that the start script will run a client and server command. The `client` command moves into our /client folder, builds the React application, and then moves back to the /server folder. The `server` command then starts a node server.
+Paste the code below into package.json.
 
 ```
 {
@@ -71,15 +71,17 @@ Paste this into package.json. Let's look at this a little more closely. When we 
 }
 ```
 
+Let's look at this a little more closely. When we upload this application to [Structure](https://structure.sh), Structure will recursively install all package.json dependencies throughout our entire project. It will then run `npm start`. If we look at our package.json here, we can see that the start script will run a client and server command. The `client` command moves into our /client folder, builds the React application, and then moves back to the /server folder. The `server` command then starts a node server.
+
 ## Structure
 
-This is the hard pard so pay close attention. While inside the /server folder, run the command
+This is the hard part so pay close attention. While inside the /server folder, run the command
 
 ```
 structure deploy my-awesome-app
 ```
 
-**That's it!** Don't believe me? Check out `https://my-awesome-app-<your-structure-user-name>.structure.sh`
+**That's it!** Not hard at all, thanks to [Structure](https://structure.sh). Don't believe me? Check out `https://my-awesome-app-<your-structure-user-name>.structure.sh`
 
 There it is. A fully functioning Express/React app deployed and live on [Structure](https://structure.sh).
 
