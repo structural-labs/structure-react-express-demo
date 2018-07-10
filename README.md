@@ -83,4 +83,4 @@ structure deploy my-awesome-app
 
 There it is. A fully functioning Express/React app deployed and live on [Structure](https://structure.sh).
 
-https://medium.freecodecamp.org/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0
+If you have any comments or suggestions for us, please reach out at [help@structure.sh](mailto:help@structure.sh)
