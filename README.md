@@ -32,6 +32,9 @@ const path = require("path");
 const app = express();
 const port = 80;
 
+// Serve any static files
+app.use(express.static(path.join(__dirname, "client/build")));
+
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
@@ -76,7 +79,7 @@ This is the hard pard so pay close attention. While inside the /server folder, r
 structure deploy my-awesome-app
 ```
 
-**That's it!** Don't believe me? Check out `https://my-awesome-app-<your-user-name>.structure.sh`
+**That's it!** Don't believe me? Check out `https://my-awesome-app-<your-structure-user-name>.structure.sh`
 
 There it is. A fully functioning Express/React app deployed and live on [Structure](https://structure.sh).
 
