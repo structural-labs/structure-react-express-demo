@@ -1,10 +1,10 @@
 {
-  "name": "server",
+  "name": "hello-world",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run client && npm run server",
-    "client": "cd client && npm run build && cd ..",
-    "server": "node server.js"
+    "start": "npm run build-client && node server",
+    "start-local": "npm run build-client && PORT=8080 node server",
+    "build-client": "cd client && npm run build && cd .."
   },
   "dependencies": {
     "express": "^4.16.2"
